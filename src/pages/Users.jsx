@@ -6,6 +6,7 @@ import axios from 'axios';
 import { useState } from 'react';
 import Table from 'react-bootstrap/Table';
 import Spinner from 'react-bootstrap/Spinner';
+import { Nav } from 'react-bootstrap';
 
 export default function Users() {
     const [users, setUsers] = useState([])
@@ -31,6 +32,7 @@ export default function Users() {
                     <Navbar.Brand href="#home">Lets Grow More - LGM</Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
+                        <Nav.Link href="/register" className='me-5'>Register</Nav.Link>
 
                         {
                             loading ?
